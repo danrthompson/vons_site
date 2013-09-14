@@ -1,0 +1,71 @@
+<wpml-config>
+    <custom-fields>
+		<custom-field action="copy">usebuilder</custom-field>
+		<custom-field action="copy">elements</custom-field>
+		<custom-field action="translate">usebuilder</custom-field>
+		<custom-field action="translate">elements</custom-field>
+
+		<custom-field action="copy">xt-slider-alias</custom-field>
+		<custom-field action="copy">header-bg</custom-field>
+		<custom-field action="copy">header-type</custom-field>
+		<custom-field action="copy">header-fixed</custom-field>
+		<custom-field action="copy">header-height</custom-field>
+		<custom-field action="copy">header-text</custom-field>
+		<custom-field action="copy">header-position</custom-field>
+		<custom-field action="copy">heading-title</custom-field>
+		<custom-field action="copy">heading-subline</custom-field>
+		<custom-field action="copy">title-position</custom-field>
+
+		<custom-field action="translate">xt-slider-alias</custom-field>
+		<custom-field action="translate">header-bg</custom-field>
+		<custom-field action="translate">header-type</custom-field>
+		<custom-field action="translate">header-fixed</custom-field>
+		<custom-field action="translate">header-height</custom-field>
+		<custom-field action="translate">header-text</custom-field>
+		<custom-field action="translate">header-position</custom-field>
+		<custom-field action="translate">heading-title</custom-field>
+		<custom-field action="translate">heading-subline</custom-field>
+		<custom-field action="translate">title-position</custom-field>
+
+		<custom-field action="copy">type-portfolio</custom-field>
+		<custom-field action="copy">project-type</custom-field>
+		<custom-field action="copy">external-url</custom-field>
+		<custom-field action="copy">target</custom-field>
+		<custom-field action="copy">lightbox-image</custom-field>
+		<custom-field action="copy">vimeo-id</custom-field>
+		<custom-field action="copy">youtube-id</custom-field>
+		<custom-field action="copy">layout</custom-field>
+		<custom-field action="copy">related</custom-field>
+		<custom-field action="translate">project-type</custom-field>
+		<custom-field action="translate">external-url</custom-field>
+		<custom-field action="translate">target</custom-field>
+		<custom-field action="translate">lightbox-image</custom-field>
+		<custom-field action="translate">vimeo-id</custom-field>
+		<custom-field action="translate">youtube-id</custom-field>
+		<custom-field action="translate">layout</custom-field>
+		<custom-field action="translate">related</custom-field>
+    </custom-fields>
+    <custom-types>
+		<custom-type translate="1">xt_sliders</custom-type>
+		<custom-type translate="1">project</custom-type>
+		<custom-type translate="1">optionsframework</custom-type>
+    </custom-types>    
+    <taxonomies>
+		<taxonomy translate="1">filter-portfolio</taxonomy>
+		<taxonomy translate="1">type-portfolio</taxonomy>
+    </taxonomies>
+    <admin-texts>
+		<key name="avod">
+
+			<key name="title_post" />
+			<key name="callout_single_main" />
+			<key name="callout_single_sub" />
+			<key name="callout_project_main" />
+			<key name="callout_project_sub" />
+			<key name="down_footer_text" />
+			
+		</key>
+	</admin-texts> 
+</wpml-config>
+
+
