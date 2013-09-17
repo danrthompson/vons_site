@@ -20,50 +20,33 @@
 		//var_dump($terms_portfolio);
 ?>
 
-<div class="single-project-related">
-	<div class="xt-related-headline">
-		<h1><?php _e('Related Projects', 'avod'); ?></h1>
-	</div>
-
-	<div class="xt-projects-wrapper xt-related-wrapper">
-
+<div id="additional-products-same-portfolio" class="widget-area sidebar sidebar-left additional-products-same-portfolio" role="complementary">
+	<ul>
+		<li id="pages-2" class="widget widget_pages">
+			<h3 class="widgettitle">
+				<span>Other Brands</span>
+			</h3>
+			<ul>
 	<?php
-	$max = 0;
-	$count = 1;
-	$mob_count = 1;
 	foreach ($terms as $term) {
-		if($max < 4) :
+		if(true) :
 			query_posts( array(
-				'filter-portfolio' => $term->slug,
 				'type-portfolio' => $portfolios,
-				'showposts' => 4,
-				'posts_per_page' => 4,
+				'showposts' => 9999,
+				'posts_per_page' => 9999,
 				'ignore_sticky_posts' => 1,
-				'post__not_in' => $do_not_duplicate ) );
+				'post__not_in' => $do_not_duplicate,
+				'orderby' => 'title', 
+				'order' => 'ASC' ) );
 					
 			if(have_posts()){
 				
-				while ( have_posts() == true && $max < 4 ) : the_post(); $do_not_duplicate[] = get_the_ID(); ?>
+				while ( have_posts() == true) : the_post(); $do_not_duplicate[] = get_the_ID(); ?>
 
 						<?php
 							// print correct class
 							$_class = '';
-
-							if($count == 1)
-								$_class = 'project-first';
-
-							if($count == 4) {
-								$_class = 'project-last';
-								$count = 0;
-							}
-
 							$_mobclass = '';
-
-							if($mob_count == 1)
-								$_mobclass = 'project-odd';
-
-							if($mob_count == 2)
-								$_mobclass = 'project-even';
 
 							// get project type
 
@@ -113,40 +96,12 @@
 							}
 
 						?>
-						<div class="project-item project-four <?php echo $_class; ?> <?php echo $_mobclass; ?>">
-							<div class="project-item-wrapper">
-								<?php if( has_post_thumbnail() ) : ?>	
-									<div class="thumbnail">
-										<a href="<?php echo $permalink; ?>"<?php echo $_target; ?><?php echo $_rel; ?> class="<?php echo $mfp; ?>">
-											<?php the_post_thumbnail('xt-portfolio-related', array('title' => get_the_title(), 'class' => '') ); ?>
-											<div class="xt-project-hover">
-												<?php echo $_icon; ?>
-											</div>
-										</a>
-									</div> <!-- .thumbnail -->
-								<?php endif; ?>
 
-								<div class="project-infos">
-									<div class="project-title"><h1><a href="<?php echo $permalink_title; ?>"<?php echo $_target; ?>><?php the_title(); ?></a></h1></div>
-									<?php if(get_the_excerpt() != '') : ?>
-										<div class="project-excerpt"><?php echo '<p>'.get_the_excerpt().'</p>'; ?></div>
-									<?php endif; ?>
-								</div> <!-- .project-infos -->
-							</div> <!-- .project-item-wrapper -->
-						</div> <!-- .project-item -->
 
-					<?php
-						// increase counter
-						$count++;
+						<li class="page_item">
+						<a href="<?php echo $permalink_title; ?>"<?php echo $_target; ?>><?php the_title(); ?></a>
+						</li>
 
-						$mob_count++;
-						if($mob_count > 2) {
-							$mob_count = 1;
-							echo '<div class="xt-mob-clear"></div>';
-						}
-					?>
-
-					<?php $max++; ?>
 				<?php 
 				endwhile; 
 				wp_reset_query();
@@ -156,26 +111,12 @@
 		endif; // max < 4
 	} // foreach
 
-	echo '<div class="xt-clear"></div>
-		</div>';
-
-	echo '
-		<script type="text/javascript">
-			jQuery(document).ready(function() {
-
-				jQuery(".project-item .thumbnail a").hover(function() {
-					jQuery(this).find(".xt-project-hover").fadeIn("fast");
-				}, function() {
-					jQuery(this).find(".xt-project-hover").fadeOut("fast");
-				});
-
-			});
-		</script>
-		';
 	?>
 
-</div> <!-- .single-project-related -->
-
+			</ul>
+		</li>
+	</ul>
+</div>
 <?php
 	}
 ?>

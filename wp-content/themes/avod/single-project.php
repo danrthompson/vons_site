@@ -19,13 +19,19 @@ wp_enqueue_script( 'xt-flexslider-js' );
 wp_enqueue_script( 'portfolio-pretty-init' );
 
 get_header(); ?>
+
+
 	
 	<div id="main-wrapper" class="full-callout-titlein">
+
 
 		<?php xt_custom_heading_print_manual( of_get_option('callout_project_main'), of_get_option('callout_project_sub') ); ?>
 
 		<div class="container" id="notebook-wrapper">
+
 			<div id="main" class="notebook">
+
+
 
 				<div class="page-title">
 					<h1><?php the_title(); ?></h1>
@@ -50,6 +56,7 @@ get_header(); ?>
 				<?php endwhile; // end of the loop. ?>
 
 			</div> <!-- #main .notebook -->
+
 		</div> <!-- .container -->		
 </div><!-- #main-wrapper -->
 

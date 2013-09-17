@@ -7,7 +7,19 @@
 
 ?>
 
-	<div class="project-media project-media-left">
+<?php
+	$related = get_post_meta($post->ID, 'related', true);
+
+	if($related != 'no') {
+		get_template_part('xt_framework/portfolio/single', 'related');
+	}
+?>
+
+
+
+	<div id="project-media-left-brand-page" class="project-media project-media-left brand-page">
+
+
 	<?php
 
 		if($_type == 'default') {
@@ -117,17 +129,9 @@
 	?>
 	</div> <!-- .project-media -->
 
-	<div class="project-content project-content-left">
+	<div id="project-content-left-brand-page" class="project-content project-content-left brand-page">
 
-		<div class="post-navigation">
-			<div class="previous-post">
-				<?php previous_post_link('%link', '<i class="icon-arrow-left"></i> '.__('PREVIOUS', 'avod')); ?> 
-			</div>
-			<div class="next-post">
-				<?php next_post_link('%link', __('NEXT', 'avod') . ' <i class="icon-arrow-right"></i>'); ?>
-			</div>
-			<div class="clear clearboth xt-clear"></div>
-		</div>
+
 
 		<div class="the-content single-the-content">
 			<?php the_content(); ?>
@@ -135,11 +139,8 @@
 
 	</div> <!-- .project-content -->
 
+
+
+
 	<div class="xt-clear"></div>
 
-	<?php
-		$related = get_post_meta($post->ID, 'related', true);
-
-		if($related != 'no')
-			get_template_part('xt_framework/portfolio/single', 'related');
-	?>
