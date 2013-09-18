@@ -30,7 +30,7 @@
 				'post_status' => null,
 				'post_parent' => $post->ID,
 				'post__not_in'	=> array( get_post_thumbnail_id() ),
-				'orderby' => 'menu_order',
+				'orderby' => 'title',
 				'order' => 'ASC',
 			);
 																				  
