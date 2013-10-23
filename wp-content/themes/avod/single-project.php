@@ -6,6 +6,7 @@
  * @subpackage Twenty_Twelve
  * @since Twenty Twelve 1.0
  */
+
  
 // Enqueue Portfolio Styles
 wp_enqueue_style( 'pretty-style' );

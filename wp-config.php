@@ -16,26 +16,27 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 
-// DEV SETTINGS
-/** The name of the database for WordPress */
-define('DB_NAME', 'vonsubdev');
-/** MySQL database username */
-define('DB_USER', 'vonsubdev');
+// DEV AND PRODUCTION SETTINGS
 /** MySQL database password */
 define('DB_PASSWORD', 'AO9UqJ0Ea1ewM!');
+// END DEV AND PRODUCTION SETTINGS
+
+// DEV SETTINGS
+/** The name of the database for WordPress */
+/** MySQL database username */
 /** MySQL hostname */
+define('DB_NAME', 'vonsubdev');
+define('DB_USER', 'vonsubdev');
 define('DB_HOST', 'vonsubdev.db.6449716.hostedresource.com');
 // END DEV SETTINGS
 
 
 // PRODUCTION SETTINGS
 /** The name of the database for WordPress */
-// define('DB_NAME', 'vonsub');
 /** MySQL database username */
-// define('DB_USER', 'vonsub');
-/** MySQL database password */
-// define('DB_PASSWORD', 'AO9UqJ0Ea1ewM!');
 /** MySQL hostname */
+// define('DB_NAME', 'vonsub');
+// define('DB_USER', 'vonsub');
 // define('DB_HOST', 'vonsub.db.6449716.hostedresource.com');
 // END PRODUCTION SETTINGS
 

@@ -2,7 +2,7 @@
 /*******************
 	SINGLE PROJECT LEFT SIDEBAR LAYOUT
 ********************/
-
+	
 	$_type = get_post_meta($post->ID, 'project-type', true);
 
 ?>
@@ -137,10 +137,15 @@
 			<?php the_content(); ?>
 		</div>
 
+			
+
+
 	</div> <!-- .project-content -->
 
 
 
 
 	<div class="xt-clear"></div>
+
+	<?php the_block("Products"); ?>
 
