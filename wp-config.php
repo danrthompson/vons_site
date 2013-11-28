@@ -25,9 +25,9 @@ define('DB_PASSWORD', 'AO9UqJ0Ea1ewM!');
 /** The name of the database for WordPress */
 /** MySQL database username */
 /** MySQL hostname */
-define('DB_NAME', 'vonsubdev');
-define('DB_USER', 'vonsubdev');
-define('DB_HOST', 'vonsubdev.db.6449716.hostedresource.com');
+// define('DB_NAME', 'vonsubdev');
+// define('DB_USER', 'vonsubdev');
+// define('DB_HOST', 'vonsubdev.db.6449716.hostedresource.com');
 // END DEV SETTINGS
 
 
@@ -35,9 +35,9 @@ define('DB_HOST', 'vonsubdev.db.6449716.hostedresource.com');
 /** The name of the database for WordPress */
 /** MySQL database username */
 /** MySQL hostname */
-// define('DB_NAME', 'vonsub');
-// define('DB_USER', 'vonsub');
-// define('DB_HOST', 'vonsub.db.6449716.hostedresource.com');
+define('DB_NAME', 'vonsub');
+define('DB_USER', 'vonsub');
+define('DB_HOST', 'vonsub.db.6449716.hostedresource.com');
 // END PRODUCTION SETTINGS
 
 
