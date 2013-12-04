@@ -35,7 +35,13 @@ get_header(); ?>
 
 					</div><!-- .content content-left -->
 
-					<?php get_sidebar('right')?>
+
+
+					<div class="widget-area sidebar sidebar-right" role="complementary">
+						<ul>
+							<?php dynamic_sidebar( 'categories' ); ?>
+						</ul>
+					</div><!-- #secondary -->
 
 					<div class="clear clearboth"></div><!-- .clearboth -->
 

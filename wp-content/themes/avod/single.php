@@ -70,10 +70,6 @@
 													[xt_social_icon icon="twitter-2" href="http://twitter.com/home?status='.get_the_title().' - '.get_permalink().'" tooltip="Twitter"]
 													[xt_social_icon icon="gplus-2" href="https://plus.google.com/share?url='.get_permalink().'&title='.get_the_title().'" tooltip="Google+"]
 													[xt_social_icon icon="linkedin-2" href="http://linkedin.com/shareArticle?mini=true&url='.get_permalink().'&title='.get_the_title().'" tooltip="LinkedIn"]
-													[xt_social_icon icon="reddit" href="http://www.reddit.com/submit?url='.get_permalink().'&title='.get_the_title().'" tooltip="Reddit"]
-													[xt_social_icon icon="digg" href="http://digg.com/submit?phase=2&url='.get_permalink().'&bodytext=&tags=&title='.get_the_title().'" tooltip="Digg"]
-													[xt_social_icon icon="delicious" href="http://www.delicious.com/post?v=2&url='.get_permalink().'&notes=&tags=&title='.get_the_title().'" tooltip="Delicious"]
-													[xt_social_icon icon="pinterest-1" href="http://pinterest.com/pin/create/button/?url='.urlencode(get_permalink()).'&media='.$pinImg.'&description='.urlencode(get_the_title()).'" tooltip="Pinterest"]
 													[xt_social_icon icon="email" href="mailto:?subject='.get_the_title().'&amp;body='.get_permalink().'" tooltip="Email"]
 													');
 												?>
@@ -83,15 +79,15 @@
 									<?php endif; ?>
 									
 									<?php if( !of_get_option('post_authorbox_disabled') ) : ?>
-									<div class="author-meta">
+									<!-- <div class="author-meta">
 										<div class="author-image">
 											<?php echo get_avatar( get_the_author_meta('email') , '85' ); ?>
-										</div> <!-- .author-image -->
+										</div> --> <!-- .author-image -->
 
-										<div class="author-details">
-											<h3><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php the_author(); ?></a></h3>
+										<!-- <div class="author-details">
+											<h3><a href="<?php echo get_author_posts_url(get_the_author_meta( 'ID' )); ?>"><?php the_author(); ?></a></h3> -->
 
-											<p>
+											<!-- <p>
 												<?php echo get_the_author_meta( 'description' ); ?> 
 											</p>
 
@@ -99,11 +95,11 @@
 
 										<div class="clear clearboth"></div>
 
-									</div> <!-- .author-meta -->
+									</div> --> <!-- .author-meta -->
 									<?php endif; ?>
 
 									<?php if( !of_get_option('post_relatedposts_disabled') ) : ?>
-									<div class="related-posts">
+<!-- 									<div class="related-posts">
 										<h3>Related posts</h3>
 										<ol>
 										<?php
@@ -143,10 +139,10 @@
 										?>
 										</ol>
 										<div class="clear clearboth xt-clear"></div>
-									</div>
+									</div> -->
 									<?php endif; ?>
 
-									<?php comments_template( '', true ); ?>
+
 								
 								</article>
 								
