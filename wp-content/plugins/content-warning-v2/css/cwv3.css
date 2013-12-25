@@ -1,13 +1,13 @@
 /* CSS Document */
 .cwv3_box{background: transparent;}
 /* Undocumented cBox colors */
-#cboxLoadingOverlay, #cboxContent, #cboxLoadedContent{background-color: #FFF !important;}
-#cwv3_auth{border: 3px solid #ccc; background: #FFF;}
+#cboxLoadingOverlay, #cboxContent, #cboxLoadedContent{background-color: rgb(245,245,245) !important;}
+#cboxContent, #cboxLoadedContent{-webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+#cwv3_auth{background-color: rgb(245,245,245);}
 #cwv3_auth div{padding: 0.25em}
-#cwv3_title{color: #FFF; font-weight: bold; text-align:center; background: #f00;}
+#cwv3_title{color: #000; font-weight: bold; text-align:center; font-size:15pt;}
 #cwv3_btns{overflow:hidden;}
-#cwv3_btns div a{ display: block; width: 100%; text-align:center; color: #FFF; font-weight:bold; text-decoration:none;}
+#cwv3_btns div a{ display: block; width: 100%; text-align:center; color: #000; font-weight:bold; text-decoration:none;}
 #cwv3_enter{float:left; width: 40%;}
-#cwv3_enter a{background-color: #0C3;}
 #cwv3_exit{float:right; width: 40%;}
-#cwv3_exit a{background-color: #F00;}
+#cwv3_enter a, #cwv3_exit a {border: 1px solid black; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; background-color: white;}
